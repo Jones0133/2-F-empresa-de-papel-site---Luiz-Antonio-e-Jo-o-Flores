@@ -1,0 +1,11 @@
+scripts.js
+
+function buyProduct(productName, price) {
+    const message = `Você adicionou ${productName} ao carrinho de compras. Preço: R$ ${price.toFixed(2)}`;
+    document.getElementById('popup-message').textContent = message;
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
